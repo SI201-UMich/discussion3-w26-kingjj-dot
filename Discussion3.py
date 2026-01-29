@@ -1,26 +1,51 @@
 import math
 
 class Rectangle():
-    # Create the constructor "__init__" method
 
-    # YOUR CODE HERE
+    # Create the constructor "__init__" method
+    def __int__(self, width, height):
+
+        self.width = int(width)
+        self.height = int(height)
+
+  
 
 
 
     # Create the "__str__" method
 
-    # YOUR CODE HERE
+    def __str__(self):
+
+        return (f"A rectangle with width {self.width} and height {self.height}")
+    
+
+
+
+    
 
 
 
     # Create the "area_calculator" method
+
+    def area_calculator(self):
+        
+        return float(self.width * self.height)
 
     # YOUR CODE HERE
 
 
 
     # Create the "__eq__" method
-    # 
+
+    def __eq__(self, other):
+
+        if self.height == other.height and self.width == other.width:
+            return True
+        else:
+            return False
+            
+
+    
     # Returns a boolean value
 
     # YOUR CODE HERE
